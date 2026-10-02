@@ -1,0 +1,2296 @@
+{
+  "users": [
+    {
+      "id": "usr_student_01",
+      "email": "student@edulearn.com",
+      "fullName": "Dara Somnang",
+      "role": "student",
+      "profilePhoto": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=400&auto=format&fit=crop&q=80",
+      "token": "fake_jwt_token_student_dara_992182749",
+      "refreshToken": "fake_refresh_token_student_dara_110293",
+      "passwordHash": "$2b$10$jfmSF5IoOuDDLvJYRxT8zugfQwKlHtWs5HRFcm.e5ydeIo69/4ESa"
+    },
+    {
+      "id": "usr_instructor_01",
+      "email": "instructor@edulearn.com",
+      "fullName": "Dr. Sarah Connor",
+      "role": "instructor",
+      "profilePhoto": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&auto=format&fit=crop&q=80",
+      "token": "fake_jwt_token_instructor_sarah_551029384",
+      "refreshToken": "fake_refresh_token_instructor_sarah_994821",
+      "passwordHash": "$2b$10$jfmSF5IoOuDDLvJYRxT8zugfQwKlHtWs5HRFcm.e5ydeIo69/4ESa"
+    },
+    {
+      "id": "usr_admin_01",
+      "email": "admin@edulearn.com",
+      "fullName": "Alex Vance (SysAdmin)",
+      "role": "admin",
+      "profilePhoto": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&auto=format&fit=crop&q=80",
+      "token": "fake_jwt_token_admin_alex_773829104",
+      "refreshToken": "fake_refresh_token_admin_alex_330192",
+      "passwordHash": "$2b$10$jfmSF5IoOuDDLvJYRxT8zugfQwKlHtWs5HRFcm.e5ydeIo69/4ESa"
+    }
+  ],
+  "students": [
+    {
+      "id": "usr_student_01",
+      "studentId": "STU-2026-0042",
+      "fullName": "Dara Somnang",
+      "gender": "Male",
+      "dateOfBirth": "2002-05-14",
+      "phoneNumber": "+855 12 345 678",
+      "email": "student@edulearn.com",
+      "profilePhoto": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=400&auto=format&fit=crop&q=80",
+      "educationLevel": "Bachelor of Computer Science (Year 3)",
+      "accountStatus": "active"
+    }
+  ],
+  "instructors": [
+    {
+      "id": "inst_01",
+      "name": "Dr. Sarah Connor",
+      "title": "Senior Mobile Architect & Google Developer Expert",
+      "bio": "Over 12 years of experience crafting large-scale iOS and Flutter apps. Former lead engineer at TechCorp.",
+      "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&auto=format&fit=crop&q=80"
+    },
+    {
+      "id": "inst_02",
+      "name": "Michael Zhang",
+      "title": "Principal Backend Engineer & Spring Champion",
+      "bio": "Specialized in high-throughput distributed systems, event-driven microservices, and Spring Boot.",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&auto=format&fit=crop&q=80"
+    },
+    {
+      "id": "inst_03",
+      "name": "Elena Rostova",
+      "title": "Lead AI Researcher & Data Scientist",
+      "bio": "PhD in Computational Intelligence. Author of foundational computer vision and deep learning curricula.",
+      "avatar": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&auto=format&fit=crop&q=80"
+    },
+    {
+      "id": "inst_04",
+      "name": "David Kim",
+      "title": "Staff UX Designer & Interaction Specialist",
+      "bio": "Former Design Lead at FinTech Global. Creator of award-winning enterprise design systems.",
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&auto=format&fit=crop&q=80"
+    },
+    {
+      "id": "inst_05",
+      "name": "Marcus Brody",
+      "title": "Chief Information Security Officer & Pen Tester",
+      "bio": "Certified Ethical Hacker (CEH) and CISSP. Trains cyber defense squads worldwide.",
+      "avatar": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&auto=format&fit=crop&q=80"
+    }
+  ],
+  "categories": [
+    {
+      "id": "cat_mobile",
+      "name": "Mobile Development",
+      "description": "Flutter, Android Kotlin, iOS Swift, and Cross-Platform Apps",
+      "iconUrl": "https://img.icons8.com/color/96/flutter.png",
+      "status": "active",
+      "courseCount": 4
+    },
+    {
+      "id": "cat_web",
+      "name": "Web Development",
+      "description": "Full Stack, React, Next.js, and Modern Web Standards",
+      "iconUrl": "https://img.icons8.com/color/96/html-5--v1.png",
+      "status": "active",
+      "courseCount": 4
+    },
+    {
+      "id": "cat_data",
+      "name": "Data Science & AI",
+      "description": "Python, Machine Learning, Deep Learning, and Analytics",
+      "iconUrl": "https://img.icons8.com/color/96/python--v1.png",
+      "status": "active",
+      "courseCount": 3
+    },
+    {
+      "id": "cat_backend",
+      "name": "Backend & Cloud",
+      "description": "Spring Boot, Node.js, GraphQL, AWS, and Cloud Architecture",
+      "iconUrl": "https://img.icons8.com/color/96/spring-logo.png",
+      "status": "active",
+      "courseCount": 3
+    },
+    {
+      "id": "cat_design",
+      "name": "UI/UX Design",
+      "description": "Figma, User Research, Design Systems, and Prototyping",
+      "iconUrl": "https://img.icons8.com/color/96/figma--v1.png",
+      "status": "active",
+      "courseCount": 1
+    },
+    {
+      "id": "cat_database",
+      "name": "Database Systems",
+      "description": "PostgreSQL, MongoDB, SQL Optimizations, and Modeling",
+      "iconUrl": "https://img.icons8.com/color/96/postgreesql.png",
+      "status": "active",
+      "courseCount": 1
+    },
+    {
+      "id": "cat_security",
+      "name": "Cybersecurity",
+      "description": "Network Defense, Ethical Hacking, and Cryptography",
+      "iconUrl": "https://img.icons8.com/color/96/shield.png",
+      "status": "active",
+      "courseCount": 2
+    },
+    {
+      "id": "cat_devops",
+      "name": "DevOps & CI/CD",
+      "description": "Docker, Kubernetes, GitHub Actions, and Infrastructure",
+      "iconUrl": "https://img.icons8.com/color/96/docker.png",
+      "status": "active",
+      "courseCount": 1
+    },
+    {
+      "id": "cat_algorithms",
+      "name": "Computer Science",
+      "description": "Data Structures, Algorithms, Complexity, and Discrete Math",
+      "iconUrl": "https://img.icons8.com/color/96/code.png",
+      "status": "active",
+      "courseCount": 1
+    },
+    {
+      "id": "cat_business",
+      "name": "Tech Leadership",
+      "description": "Agile Management, Scrum, and Product Strategy",
+      "iconUrl": "https://img.icons8.com/color/96/briefcase.png",
+      "status": "active",
+      "courseCount": 0
+    }
+  ],
+  "courses": [
+    {
+      "id": "crs_01",
+      "title": "Flutter Mobile Development: Clean Architecture & Riverpod",
+      "categoryId": "cat_mobile",
+      "description": "Master Flutter and Dart with Material 3, Riverpod 2, Clean Architecture, and seamless REST API integration with real backends.",
+      "imageUrl": "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&auto=format&fit=crop&q=80",
+      "instructorId": "inst_01",
+      "duration": "32h 45m",
+      "level": "Intermediate",
+      "lessonCount": 6,
+      "rating": 4.9,
+      "enrollmentCount": 1420,
+      "status": "published",
+      "price": 49.99,
+      "isFree": 0
+    },
+    {
+      "id": "crs_02",
+      "title": "Full Stack Web Development: Modern Standards & React",
+      "categoryId": "cat_web",
+      "description": "From HTML5/CSS3 to React 18, Node.js, Express, and modern RESTful APIs with database connectivity.",
+      "imageUrl": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&auto=format&fit=crop&q=80",
+      "instructorId": "inst_02",
+      "duration": "45h 10m",
+      "level": "Beginner",
+      "lessonCount": 4,
+      "rating": 4.8,
+      "enrollmentCount": 2310,
+      "status": "published",
+      "price": 59.99,
+      "isFree": 0
+    },
+    {
+      "id": "crs_03",
+      "title": "Database Fundamentals: PostgreSQL & SQL Mastery",
+      "categoryId": "cat_database",
+      "description": "Deep dive into relational database design, indexing, transactions, ACID properties, normalization, and query optimizations.",
+      "imageUrl": "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=800&auto=format&fit=crop&q=80",
+      "instructorId": "inst_02",
+      "duration": "18h 30m",
+      "level": "All Levels",
+      "lessonCount": 3,
+      "rating": 4.7,
+      "enrollmentCount": 980,
+      "status": "published",
+      "price": 29.99,
+      "isFree": 0
+    },
+    {
+      "id": "crs_04",
+      "title": "Python for Data Science & Machine Learning Foundations",
+      "categoryId": "cat_data",
+      "description": "Learn NumPy, Pandas, Matplotlib, Scikit-learn, and statistical data modeling from scratch.",
+      "imageUrl": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&auto=format&fit=crop&q=80",
+      "instructorId": "inst_03",
+      "duration": "38h 00m",
+      "level": "Beginner",
+      "lessonCount": 4,
+      "rating": 4.9,
+      "enrollmentCount": 3450,
+      "status": "published",
+      "price": 0,
+      "isFree": 1
+    },
+    {
+      "id": "crs_05",
+      "title": "Introduction to Artificial Intelligence & Neural Networks",
+      "categoryId": "cat_data",
+      "description": "Demystify deep learning, convolutional neural networks, backpropagation, and large language models.",
+      "imageUrl": "https://images.unsplash.com/photo-1677442136019-21780efad99a?w=800&auto=format&fit=crop&q=80",
+      "instructorId": "inst_03",
+      "duration": "26h 15m",
+      "level": "Advanced",
+      "lessonCount": 3,
+      "rating": 4.9,
+      "enrollmentCount": 1890,
+      "status": "published",
+      "price": 69.99,
+      "isFree": 0
+    },
+    {
+      "id": "crs_06",
+      "title": "UI/UX Design Fundamentals: Figma & Design Systems",
+      "categoryId": "cat_design",
+      "description": "Learn visual hierarchy, wireframing, high-fidelity prototyping, accessibility, and modern component architecture in Figma.",
+      "imageUrl": "https://images.unsplash.com/photo-1581291518655-9523c93269c4?w=800&auto=format&fit=crop&q=80",
+      "instructorId": "inst_04",
+      "duration": "20h 45m",
+      "level": "Beginner",
+      "lessonCount": 3,
+      "rating": 4.8,
+      "enrollmentCount": 1620,
+      "status": "published",
+      "price": 34.99,
+      "isFree": 0
+    },
+    {
+      "id": "crs_07",
+      "title": "Java Programming: Core Concepts to Object-Oriented Design",
+      "categoryId": "cat_backend",
+      "description": "Master Java 21 LTS features, JVM memory mechanics, generics, lambdas, concurrency, and OOP design patterns.",
+      "imageUrl": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&auto=format&fit=crop&q=80",
+      "instructorId": "inst_02",
+      "duration": "35h 20m",
+      "level": "Beginner",
+      "lessonCount": 3,
+      "rating": 4.6,
+      "enrollmentCount": 1240,
+      "status": "published",
+      "price": 0,
+      "isFree": 1
+    },
+    {
+      "id": "crs_08",
+      "title": "React Web Development: Hooks, Redux Toolkit & Next.js",
+      "categoryId": "cat_web",
+      "description": "Build enterprise-grade single-page web applications with React 18, state management, and modern tooling.",
+      "imageUrl": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800&auto=format&fit=crop&q=80",
+      "instructorId": "inst_01",
+      "duration": "28h 50m",
+      "level": "Intermediate",
+      "lessonCount": 3,
+      "rating": 4.8,
+      "enrollmentCount": 2150,
+      "status": "published",
+      "price": 44.99,
+      "isFree": 0
+    },
+    {
+      "id": "crs_09",
+      "title": "Cybersecurity Fundamentals: Network Security & Defense",
+      "categoryId": "cat_security",
+      "description": "Understand TCP/IP security, firewall configurations, symmetric/asymmetric encryption, and vulnerability assessment.",
+      "imageUrl": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800&auto=format&fit=crop&q=80",
+      "instructorId": "inst_05",
+      "duration": "22h 10m",
+      "level": "Beginner",
+      "lessonCount": 2,
+      "rating": 4.7,
+      "enrollmentCount": 1780,
+      "status": "published",
+      "price": 39.99,
+      "isFree": 0
+    },
+    {
+      "id": "crs_10",
+      "title": "Cloud Computing Basics: AWS Core Services & Architectures",
+      "categoryId": "cat_backend",
+      "description": "Master Amazon EC2, S3, RDS, Lambda serverless, VPC networking, and cloud security architecture.",
+      "imageUrl": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&auto=format&fit=crop&q=80",
+      "instructorId": "inst_02",
+      "duration": "24h 00m",
+      "level": "All Levels",
+      "lessonCount": 2,
+      "rating": 4.8,
+      "enrollmentCount": 2890,
+      "status": "published",
+      "price": 49.99,
+      "isFree": 0
+    },
+    {
+      "id": "crs_11",
+      "title": "Spring Boot 3 & Microservices: Production Ready APIs",
+      "categoryId": "cat_backend",
+      "description": "Build enterprise scalable microservices with Spring Boot 3, Spring Security, JWT, Eureka, API Gateway, and Docker.",
+      "imageUrl": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&auto=format&fit=crop&q=80",
+      "instructorId": "inst_02",
+      "duration": "40h 15m",
+      "level": "Advanced",
+      "lessonCount": 3,
+      "rating": 4.9,
+      "enrollmentCount": 1650,
+      "status": "published",
+      "price": 64.99,
+      "isFree": 0
+    },
+    {
+      "id": "crs_12",
+      "title": "Next.js 14 Full Stack: Server Actions & App Router",
+      "categoryId": "cat_web",
+      "description": "Production-level full-stack web applications with React Server Components, Tailwind CSS, Prisma ORM, and Stripe.",
+      "imageUrl": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&auto=format&fit=crop&q=80",
+      "instructorId": "inst_01",
+      "duration": "30h 20m",
+      "level": "Intermediate",
+      "lessonCount": 2,
+      "rating": 4.9,
+      "enrollmentCount": 1940,
+      "status": "published",
+      "price": 54.99,
+      "isFree": 0
+    },
+    {
+      "id": "crs_13",
+      "title": "Kotlin for Android: Jetpack Compose Modern UI",
+      "categoryId": "cat_mobile",
+      "description": "Declarative Android UI with Jetpack Compose, Coroutines, StateFlow, Room DB, and MVVM architecture.",
+      "imageUrl": "https://images.unsplash.com/photo-1607252650355-f7fd0460ccdb?w=800&auto=format&fit=crop&q=80",
+      "instructorId": "inst_01",
+      "duration": "31h 00m",
+      "level": "Intermediate",
+      "lessonCount": 2,
+      "rating": 4.8,
+      "enrollmentCount": 1120,
+      "status": "published",
+      "price": 49.99,
+      "isFree": 0
+    },
+    {
+      "id": "crs_14",
+      "title": "iOS App Development: Swift 5.9 & SwiftUI 5",
+      "categoryId": "cat_mobile",
+      "description": "Build native iOS, iPadOS, and watchOS applications using SwiftUI, SwiftData, and async/await concurrency.",
+      "imageUrl": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&auto=format&fit=crop&q=80",
+      "instructorId": "inst_01",
+      "duration": "36h 30m",
+      "level": "Intermediate",
+      "lessonCount": 2,
+      "rating": 4.9,
+      "enrollmentCount": 1540,
+      "status": "published",
+      "price": 59.99,
+      "isFree": 0
+    },
+    {
+      "id": "crs_15",
+      "title": "DevOps & Docker CI/CD: Containerization to Kubernetes",
+      "categoryId": "cat_devops",
+      "description": "Automate build pipelines, create resilient Docker containers, and deploy scalable clusters onto Kubernetes.",
+      "imageUrl": "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=800&auto=format&fit=crop&q=80",
+      "instructorId": "inst_02",
+      "duration": "27h 40m",
+      "level": "Advanced",
+      "lessonCount": 2,
+      "rating": 4.8,
+      "enrollmentCount": 1390,
+      "status": "published",
+      "price": 54.99,
+      "isFree": 0
+    },
+    {
+      "id": "crs_16",
+      "title": "Machine Learning with PyTorch: Deep Neural Architectures",
+      "categoryId": "cat_data",
+      "description": "Hands-on deep learning with tensors, autograd, transfer learning, and Transformers using PyTorch.",
+      "imageUrl": "https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=800&auto=format&fit=crop&q=80",
+      "instructorId": "inst_03",
+      "duration": "34h 10m",
+      "level": "Advanced",
+      "lessonCount": 2,
+      "rating": 4.9,
+      "enrollmentCount": 1870,
+      "status": "published",
+      "price": 69.99,
+      "isFree": 0
+    },
+    {
+      "id": "crs_17",
+      "title": "Data Structures & Algorithms in Practice",
+      "categoryId": "cat_algorithms",
+      "description": "Conquer coding interviews with mastery in Trees, Graphs, Dynamic Programming, and Big-O runtime analysis.",
+      "imageUrl": "https://images.unsplash.com/photo-1509228468518-180dd4864904?w=800&auto=format&fit=crop&q=80",
+      "instructorId": "inst_02",
+      "duration": "42h 00m",
+      "level": "All Levels",
+      "lessonCount": 2,
+      "rating": 4.9,
+      "enrollmentCount": 3820,
+      "status": "published",
+      "price": 0,
+      "isFree": 1
+    },
+    {
+      "id": "crs_18",
+      "title": "GraphQL API Design with Node.js & Apollo Server",
+      "categoryId": "cat_web",
+      "description": "Construct type-safe, query-efficient GraphQL APIs using Apollo Server, schema federation, and authentication.",
+      "imageUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&auto=format&fit=crop&q=80",
+      "instructorId": "inst_01",
+      "duration": "19h 30m",
+      "level": "Intermediate",
+      "lessonCount": 2,
+      "rating": 4.7,
+      "enrollmentCount": 940,
+      "status": "published",
+      "price": 39.99,
+      "isFree": 0
+    },
+    {
+      "id": "crs_19",
+      "title": "Ethical Hacking & Penetration Testing Bootcamp",
+      "categoryId": "cat_security",
+      "description": "Hands-on penetration testing with Kali Linux, Metasploit, Wireshark, Burp Suite, and OWASP Top 10.",
+      "imageUrl": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&auto=format&fit=crop&q=80",
+      "instructorId": "inst_05",
+      "duration": "37h 20m",
+      "level": "Advanced",
+      "lessonCount": 2,
+      "rating": 4.9,
+      "enrollmentCount": 2210,
+      "status": "published",
+      "price": 74.99,
+      "isFree": 0
+    },
+    {
+      "id": "crs_20",
+      "title": "Cross-Platform Mobile Architecture with Dart",
+      "categoryId": "cat_mobile",
+      "description": "Deep dive into Dart language internals, asynchronous streams, isolates, and clean architecture patterns.",
+      "imageUrl": "https://images.unsplash.com/photo-1526498460520-4c246339dccb?w=800&auto=format&fit=crop&q=80",
+      "instructorId": "inst_01",
+      "duration": "21h 15m",
+      "level": "Intermediate",
+      "lessonCount": 2,
+      "rating": 4.8,
+      "enrollmentCount": 880,
+      "status": "published",
+      "price": 0,
+      "isFree": 1
+    }
+  ],
+  "lessons": [
+    {
+      "id": "les_01_01",
+      "courseId": "crs_01",
+      "title": "Introduction to Modern Flutter & Dart 3",
+      "description": "Overview of Flutter architecture, Dart 3 records, patterns, and development setup.",
+      "order": 1,
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+      "duration": "18:45",
+      "status": "published",
+      "isLocked": 0
+    },
+    {
+      "id": "les_01_02",
+      "courseId": "crs_01",
+      "title": "State Management with Riverpod 2.0",
+      "description": "Understanding Notifiers, AsyncNotifier, family modifiers, and reactive widget updates.",
+      "order": 2,
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+      "duration": "24:12",
+      "status": "published",
+      "isLocked": 0
+    },
+    {
+      "id": "les_01_03",
+      "courseId": "crs_01",
+      "title": "Clean Architecture Folder Structure",
+      "description": "Separating Presentation, Domain, and Data layers with dependency inversion.",
+      "order": 3,
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+      "duration": "31:00",
+      "status": "published",
+      "isLocked": 0
+    },
+    {
+      "id": "les_01_04",
+      "courseId": "crs_01",
+      "title": "Dio Client & Error Handling",
+      "description": "Configuring interceptors, auth tokens, retry logic, and clean AppException mappings.",
+      "order": 4,
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+      "duration": "26:50",
+      "status": "published",
+      "isLocked": 0
+    },
+    {
+      "id": "les_01_05",
+      "courseId": "crs_01",
+      "title": "GoRouter & Deep Linking Setup",
+      "description": "Declarative routing, route guards, nested shell routes, and authentication redirects.",
+      "order": 5,
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4",
+      "duration": "22:15",
+      "status": "published",
+      "isLocked": 0
+    },
+    {
+      "id": "les_01_06",
+      "courseId": "crs_01",
+      "title": "Connecting to Spring Boot Backend",
+      "description": "Replacing fake repositories with Spring Boot REST endpoints seamlessly.",
+      "order": 6,
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyBlazes.mp4",
+      "duration": "35:40",
+      "status": "published",
+      "isLocked": 0
+    },
+    {
+      "id": "les_02_01",
+      "courseId": "crs_02",
+      "title": "Modern HTML5 & Semantic Elements",
+      "description": "Semantic markup, accessibility ARIA attributes, and SEO foundation.",
+      "order": 1,
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+      "duration": "20:10",
+      "status": "published",
+      "isLocked": 0
+    },
+    {
+      "id": "les_02_02",
+      "courseId": "crs_02",
+      "title": "CSS Grid, Flexbox & Responsive Layouts",
+      "description": "Building mobile-first adaptive interfaces with modern CSS.",
+      "order": 2,
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+      "duration": "28:40",
+      "status": "published",
+      "isLocked": 0
+    },
+    {
+      "id": "les_02_03",
+      "courseId": "crs_02",
+      "title": "Modern JavaScript (ES6+) Features",
+      "description": "Arrow functions, destructuring, promises, async/await, and modules.",
+      "order": 3,
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+      "duration": "33:15",
+      "status": "published",
+      "isLocked": 0
+    },
+    {
+      "id": "les_02_04",
+      "courseId": "crs_02",
+      "title": "Node.js & Express RESTful Server",
+      "description": "Creating API endpoints, middleware, routing, and JSON request validation.",
+      "order": 4,
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+      "duration": "39:00",
+      "status": "published",
+      "isLocked": 0
+    },
+    {
+      "id": "les_03_01",
+      "courseId": "crs_03",
+      "title": "Relational Model & Normalization Rules",
+      "description": "1NF, 2NF, 3NF, BCNF, and relational integrity constraints.",
+      "order": 1,
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+      "duration": "25:00",
+      "status": "published",
+      "isLocked": 0
+    },
+    {
+      "id": "les_03_02",
+      "courseId": "crs_03",
+      "title": "Complex Queries: Joins & Aggregations",
+      "description": "INNER, LEFT, FULL OUTER joins, GROUP BY, and window functions.",
+      "order": 2,
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+      "duration": "32:20",
+      "status": "published",
+      "isLocked": 0
+    },
+    {
+      "id": "les_03_03",
+      "courseId": "crs_03",
+      "title": "Indexes & B-Tree Performance Tuning",
+      "description": "EXPLAIN ANALYZE, composite indexes, and preventing sequential scans.",
+      "order": 3,
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+      "duration": "29:45",
+      "status": "published",
+      "isLocked": 0
+    },
+    {
+      "id": "les_04_01",
+      "courseId": "crs_04",
+      "title": "Python for Data Analysis Environment Setup",
+      "description": "Jupyter Notebooks, Conda environments, and package management.",
+      "order": 1,
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+      "duration": "15:20",
+      "status": "published",
+      "isLocked": 0
+    },
+    {
+      "id": "les_04_02",
+      "courseId": "crs_04",
+      "title": "NumPy Vectorized Arrays & Operations",
+      "description": "Multi-dimensional slicing, broadcasting, and linear algebra routines.",
+      "order": 2,
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+      "duration": "27:15",
+      "status": "published",
+      "isLocked": 0
+    },
+    {
+      "id": "les_04_03",
+      "courseId": "crs_04",
+      "title": "Pandas DataFrames: Cleaning & Filtering",
+      "description": "Handling missing values, grouping, merging, and reshaping datasets.",
+      "order": 3,
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+      "duration": "34:00",
+      "status": "published",
+      "isLocked": 0
+    },
+    {
+      "id": "les_04_04",
+      "courseId": "crs_04",
+      "title": "Scikit-Learn: Classification & Regression",
+      "description": "Training Decision Trees, Logistic Regression, and evaluating with F1 score.",
+      "order": 4,
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+      "duration": "38:30",
+      "status": "published",
+      "isLocked": 0
+    },
+    {
+      "id": "les_05_01",
+      "courseId": "crs_05",
+      "title": "Perceptrons and Multilayer Perceptrons",
+      "description": "Activation functions, loss gradients, and the feed-forward mechanism.",
+      "order": 1,
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+      "duration": "22:40",
+      "status": "published",
+      "isLocked": 0
+    },
+    {
+      "id": "les_05_02",
+      "courseId": "crs_05",
+      "title": "Convolutional Neural Networks (CNNs)",
+      "description": "Kernel filters, pooling layers, and image classification architectures.",
+      "order": 2,
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+      "duration": "36:10",
+      "status": "published",
+      "isLocked": 0
+    },
+    {
+      "id": "les_05_03",
+      "courseId": "crs_05",
+      "title": "Transformers & Attention Mechanisms",
+      "description": "Self-attention, query-key-value vectors, and the foundation of modern LLMs.",
+      "order": 3,
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+      "duration": "42:00",
+      "status": "published",
+      "isLocked": 0
+    },
+    {
+      "id": "les_06_01",
+      "courseId": "crs_06",
+      "title": "User-Centered Design Principles",
+      "description": "Empathy maps, user personas, journey mapping, and usability heuristics.",
+      "order": 1,
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+      "duration": "19:30",
+      "status": "published",
+      "isLocked": 0
+    },
+    {
+      "id": "les_06_02",
+      "courseId": "crs_06",
+      "title": "Figma Auto-Layout & Design Tokens",
+      "description": "Mastering responsive constraints, design tokens, and components in Figma.",
+      "order": 2,
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+      "duration": "31:40",
+      "status": "published",
+      "isLocked": 0
+    },
+    {
+      "id": "les_06_03",
+      "courseId": "crs_06",
+      "title": "Interactive Prototyping & User Testing",
+      "description": "Connecting screen transitions, micro-interactions, and usability testing.",
+      "order": 3,
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+      "duration": "26:15",
+      "status": "published",
+      "isLocked": 0
+    },
+    {
+      "id": "les_07_01",
+      "courseId": "crs_07",
+      "title": "Java 21 Syntax & Virtual Threads",
+      "description": "Project Loom virtual threads, pattern matching for switch, and record classes.",
+      "order": 1,
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+      "duration": "28:10",
+      "status": "published",
+      "isLocked": 0
+    },
+    {
+      "id": "les_07_02",
+      "courseId": "crs_07",
+      "title": "Object-Oriented Design & SOLID Principles",
+      "description": "Clean polymorphism, abstract contracts, and dependency injection in Java.",
+      "order": 2,
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+      "duration": "33:45",
+      "status": "published",
+      "isLocked": 0
+    },
+    {
+      "id": "les_07_03",
+      "courseId": "crs_07",
+      "title": "Collections & Stream API",
+      "description": "Map, filter, reduce, collectors, and parallel streams in practice.",
+      "order": 3,
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+      "duration": "30:20",
+      "status": "published",
+      "isLocked": 0
+    },
+    {
+      "id": "les_08_01",
+      "courseId": "crs_08",
+      "title": "React 18 Hooks in Depth",
+      "description": "useState, useEffect, useMemo, useCallback, and custom hooks.",
+      "order": 1,
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+      "duration": "27:15",
+      "status": "published",
+      "isLocked": 0
+    },
+    {
+      "id": "les_08_02",
+      "courseId": "crs_08",
+      "title": "State Management with Redux Toolkit",
+      "description": "Slices, createAsyncThunk, selectors, and store configuration.",
+      "order": 2,
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+      "duration": "34:00",
+      "status": "published",
+      "isLocked": 0
+    },
+    {
+      "id": "les_08_03",
+      "courseId": "crs_08",
+      "title": "React Performance & Lazy Loading",
+      "description": "React.memo, code splitting with React.lazy, and Profiler optimization.",
+      "order": 3,
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+      "duration": "25:50",
+      "status": "published",
+      "isLocked": 0
+    },
+    {
+      "id": "les_09_01",
+      "courseId": "crs_09",
+      "title": "TCP/IP Architecture & Packet Sniffing",
+      "description": "Packet headers, Wireshark inspection, ARP spoofing, and defense.",
+      "order": 1,
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+      "duration": "29:40",
+      "status": "published",
+      "isLocked": 0
+    },
+    {
+      "id": "les_09_02",
+      "courseId": "crs_09",
+      "title": "Cryptography: SSL/TLS & Public Key Infrastructure",
+      "description": "Asymmetric encryption, RSA, AES-256, certificates, and digital signatures.",
+      "order": 2,
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+      "duration": "36:10",
+      "status": "published",
+      "isLocked": 0
+    },
+    {
+      "id": "les_10_01",
+      "courseId": "crs_10",
+      "title": "AWS Identity & Access Management (IAM)",
+      "description": "Roles, policies, MFA enforcement, and least-privilege principles.",
+      "order": 1,
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+      "duration": "23:30",
+      "status": "published",
+      "isLocked": 0
+    },
+    {
+      "id": "les_10_02",
+      "courseId": "crs_10",
+      "title": "Amazon EC2 & S3 Cloud Storage",
+      "description": "Provisioning virtual machines, bucket lifecycle rules, and security.",
+      "order": 2,
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+      "duration": "31:20",
+      "status": "published",
+      "isLocked": 0
+    },
+    {
+      "id": "les_11_01",
+      "courseId": "crs_11",
+      "title": "Spring Boot 3 Project Setup & Architecture",
+      "description": "Spring initializr, Gradle/Maven, controller-service-repository patterns.",
+      "order": 1,
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+      "duration": "24:50",
+      "status": "published",
+      "isLocked": 0
+    },
+    {
+      "id": "les_11_02",
+      "courseId": "crs_11",
+      "title": "Spring Security 6 with Stateless JWT",
+      "description": "Custom authentication filters, token validation, and role authorization.",
+      "order": 2,
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+      "duration": "38:15",
+      "status": "published",
+      "isLocked": 0
+    },
+    {
+      "id": "les_11_03",
+      "courseId": "crs_11",
+      "title": "Spring Data JPA & PostgreSQL Integration",
+      "description": "Entities, repositories, custom JPQL queries, and database migrations with Flyway.",
+      "order": 3,
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+      "duration": "35:00",
+      "status": "published",
+      "isLocked": 0
+    },
+    {
+      "id": "les_12_01",
+      "courseId": "crs_12",
+      "title": "Next.js App Router Architecture",
+      "description": "Server vs Client components, layouts, loading states, and error boundaries.",
+      "order": 1,
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+      "duration": "27:40",
+      "status": "published",
+      "isLocked": 0
+    },
+    {
+      "id": "les_12_02",
+      "courseId": "crs_12",
+      "title": "Server Actions & Data Mutation",
+      "description": "Direct database mutation from server actions without manual API routes.",
+      "order": 2,
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+      "duration": "32:10",
+      "status": "published",
+      "isLocked": 0
+    },
+    {
+      "id": "les_13_01",
+      "courseId": "crs_13",
+      "title": "Jetpack Compose Basics & State Hoisting",
+      "description": "Composable functions, modifiers, remember, and mutableStateOf.",
+      "order": 1,
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+      "duration": "26:30",
+      "status": "published",
+      "isLocked": 0
+    },
+    {
+      "id": "les_13_02",
+      "courseId": "crs_13",
+      "title": "Room DB & Kotlin Coroutines Flow",
+      "description": "Reactive local database queries with Kotlin Flow and MVVM ViewModel.",
+      "order": 2,
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+      "duration": "34:50",
+      "status": "published",
+      "isLocked": 0
+    },
+    {
+      "id": "les_14_01",
+      "courseId": "crs_14",
+      "title": "SwiftUI Declarative UI & NavigationStack",
+      "description": "Views, ViewModifiers, @State, @Binding, and NavigationStack paths.",
+      "order": 1,
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+      "duration": "29:00",
+      "status": "published",
+      "isLocked": 0
+    },
+    {
+      "id": "les_14_02",
+      "courseId": "crs_14",
+      "title": "SwiftData & Modern Concurrency",
+      "description": "Persisting models with @Model macro and async/await task handling.",
+      "order": 2,
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+      "duration": "33:20",
+      "status": "published",
+      "isLocked": 0
+    },
+    {
+      "id": "les_15_01",
+      "courseId": "crs_15",
+      "title": "Multi-Stage Dockerfile Optimization",
+      "description": "Layer caching, minimal base images (Alpine/Distroless), and image security.",
+      "order": 1,
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+      "duration": "25:15",
+      "status": "published",
+      "isLocked": 0
+    },
+    {
+      "id": "les_15_02",
+      "courseId": "crs_15",
+      "title": "Kubernetes Pods, Deployments & Services",
+      "description": "Declarative YAML manifests, rolling updates, and cluster networking.",
+      "order": 2,
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+      "duration": "39:40",
+      "status": "published",
+      "isLocked": 0
+    },
+    {
+      "id": "les_16_01",
+      "courseId": "crs_16",
+      "title": "PyTorch Tensors & Custom Datasets",
+      "description": "DataLoader pipelines, GPU acceleration with CUDA, and tensor operations.",
+      "order": 1,
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+      "duration": "31:10",
+      "status": "published",
+      "isLocked": 0
+    },
+    {
+      "id": "les_16_02",
+      "courseId": "crs_16",
+      "title": "Transfer Learning with ResNet & Vision Models",
+      "description": "Fine-tuning pre-trained weights for specialized domain classification.",
+      "order": 2,
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+      "duration": "37:50",
+      "status": "published",
+      "isLocked": 0
+    },
+    {
+      "id": "les_17_01",
+      "courseId": "crs_17",
+      "title": "Binary Trees, BSTs & Balancing",
+      "description": "Tree traversals (inorder, preorder, postorder) and AVL balance factors.",
+      "order": 1,
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+      "duration": "33:00",
+      "status": "published",
+      "isLocked": 0
+    },
+    {
+      "id": "les_17_02",
+      "courseId": "crs_17",
+      "title": "Graph Traversal: BFS, DFS & Dijkstra",
+      "description": "Adjacency lists, shortest path algorithms, and cycle detection.",
+      "order": 2,
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+      "duration": "41:20",
+      "status": "published",
+      "isLocked": 0
+    },
+    {
+      "id": "les_18_01",
+      "courseId": "crs_18",
+      "title": "GraphQL Schemas, Queries & Mutations",
+      "description": "Type definitions, resolvers, context, and query execution pipeline.",
+      "order": 1,
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+      "duration": "28:10",
+      "status": "published",
+      "isLocked": 0
+    },
+    {
+      "id": "les_18_02",
+      "courseId": "crs_18",
+      "title": "Solving the N+1 Query Problem with DataLoader",
+      "description": "Batching and caching database requests in GraphQL resolvers.",
+      "order": 2,
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+      "duration": "30:45",
+      "status": "published",
+      "isLocked": 0
+    },
+    {
+      "id": "les_19_01",
+      "courseId": "crs_19",
+      "title": "Reconnaissance & Port Scanning with Nmap",
+      "description": "OS fingerprinting, service version detection, and vulnerability scripts.",
+      "order": 1,
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+      "duration": "35:20",
+      "status": "published",
+      "isLocked": 0
+    },
+    {
+      "id": "les_19_02",
+      "courseId": "crs_19",
+      "title": "Web Application Exploitation: SQL Injection & XSS",
+      "description": "Finding flaws with Burp Suite, SQLMap, and sanitizing user inputs.",
+      "order": 2,
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+      "duration": "44:10",
+      "status": "published",
+      "isLocked": 0
+    },
+    {
+      "id": "les_20_01",
+      "courseId": "crs_20",
+      "title": "Dart Isolates & Multi-Threading",
+      "description": "Spawning background worker threads and passing messages with ReceivePort.",
+      "order": 1,
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+      "duration": "26:50",
+      "status": "published",
+      "isLocked": 0
+    },
+    {
+      "id": "les_20_02",
+      "courseId": "crs_20",
+      "title": "Streams & Asynchronous Generators",
+      "description": "StreamController, broadcast streams, async* generators, and transformation.",
+      "order": 2,
+      "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+      "duration": "31:15",
+      "status": "published",
+      "isLocked": 0
+    }
+  ],
+  "materials": [
+    {
+      "id": "mat_01_01",
+      "lessonId": "les_01_01",
+      "title": "Flutter Dart 3 CheatSheet",
+      "type": "pdf",
+      "fileUrl": "https://example.com/materials/flutter-cheatsheet.pdf",
+      "uploadDate": "2026-09-01",
+      "description": "Quick reference guide for Dart 3 pattern matching and records.",
+      "fileSize": "1.8 MB"
+    },
+    {
+      "id": "mat_01_02",
+      "lessonId": "les_01_02",
+      "title": "Riverpod 2 Architecture Diagram",
+      "type": "pdf",
+      "fileUrl": "https://example.com/materials/riverpod-guide.pdf",
+      "uploadDate": "2026-09-02",
+      "description": "Visual flow from DataSource to ConsumerWidget.",
+      "fileSize": "2.4 MB"
+    },
+    {
+      "id": "mat_01_03",
+      "lessonId": "les_01_03",
+      "title": "Clean Architecture Boilerplate Code",
+      "type": "zip",
+      "fileUrl": "https://example.com/materials/clean-arch-boilerplate.zip",
+      "uploadDate": "2026-09-03",
+      "description": "Starter project structure with contracts.",
+      "fileSize": "4.2 MB"
+    }
+  ],
+  "quizzes": [
+    {
+      "id": "quiz_01",
+      "lessonId": "les_01_02",
+      "courseId": "crs_01",
+      "title": "Riverpod 2.0 & Clean State Management",
+      "description": "Test your understanding of Riverpod providers, ref.watch, and immutability.",
+      "totalQuestions": 5,
+      "timeLimitMinutes": 10,
+      "passingScore": 70,
+      "maximumAttempts": 3
+    },
+    {
+      "id": "quiz_02",
+      "lessonId": "les_02_02",
+      "courseId": "crs_02",
+      "title": "CSS Grid & Flexbox Fundamentals",
+      "description": "Validate your knowledge of CSS layouts, alignment, and responsiveness.",
+      "totalQuestions": 5,
+      "timeLimitMinutes": 10,
+      "passingScore": 70,
+      "maximumAttempts": 3
+    },
+    {
+      "id": "quiz_03",
+      "lessonId": "les_03_02",
+      "courseId": "crs_03",
+      "title": "SQL Joins & Relational Algebra",
+      "description": "Verify your proficiency in joins, aggregations, and subqueries.",
+      "totalQuestions": 5,
+      "timeLimitMinutes": 10,
+      "passingScore": 70,
+      "maximumAttempts": 3
+    },
+    {
+      "id": "quiz_04",
+      "lessonId": "les_04_02",
+      "courseId": "crs_04",
+      "title": "Python NumPy & Data Slicing",
+      "description": "Test skills on array broadcasting, vectorized operations, and performance.",
+      "totalQuestions": 5,
+      "timeLimitMinutes": 10,
+      "passingScore": 70,
+      "maximumAttempts": 3
+    },
+    {
+      "id": "quiz_05",
+      "lessonId": "les_05_01",
+      "courseId": "crs_05",
+      "title": "Neural Networks & Machine Learning Theory",
+      "description": "Foundations of loss functions, optimization, and backpropagation.",
+      "totalQuestions": 5,
+      "timeLimitMinutes": 10,
+      "passingScore": 70,
+      "maximumAttempts": 3
+    },
+    {
+      "id": "quiz_06",
+      "lessonId": "les_07_01",
+      "courseId": "crs_07",
+      "title": "Java Concurrency & Virtual Threads",
+      "description": "Understand Java 21 Project Loom, synchronization, and immutability.",
+      "totalQuestions": 5,
+      "timeLimitMinutes": 10,
+      "passingScore": 70,
+      "maximumAttempts": 3
+    },
+    {
+      "id": "quiz_07",
+      "lessonId": "les_09_01",
+      "courseId": "crs_09",
+      "title": "Network Protocols & Packet Analysis",
+      "description": "Test fundamentals of IP, TCP handshake, and Wireshark filters.",
+      "totalQuestions": 5,
+      "timeLimitMinutes": 10,
+      "passingScore": 70,
+      "maximumAttempts": 3
+    },
+    {
+      "id": "quiz_08",
+      "lessonId": "les_11_02",
+      "courseId": "crs_11",
+      "title": "Spring Security 6 & JWT Authentication",
+      "description": "Verify concepts on Spring filter chains, stateless sessions, and token verification.",
+      "totalQuestions": 5,
+      "timeLimitMinutes": 10,
+      "passingScore": 70,
+      "maximumAttempts": 3
+    },
+    {
+      "id": "quiz_09",
+      "lessonId": "les_15_01",
+      "courseId": "crs_15",
+      "title": "Docker Optimization & Containers",
+      "description": "Assess understanding of Docker layers, volume mounts, and container life cycles.",
+      "totalQuestions": 5,
+      "timeLimitMinutes": 10,
+      "passingScore": 70,
+      "maximumAttempts": 3
+    },
+    {
+      "id": "quiz_10",
+      "lessonId": "les_17_01",
+      "courseId": "crs_17",
+      "title": "Binary Search Trees & Algorithmic Complexity",
+      "description": "Test Big-O complexity, balance factors, and binary tree traversals.",
+      "totalQuestions": 5,
+      "timeLimitMinutes": 10,
+      "passingScore": 70,
+      "maximumAttempts": 3
+    }
+  ],
+  "questions": [
+    {
+      "id": "q_01_1",
+      "quizId": "quiz_01",
+      "questionText": "Which method should you use inside build() to reactively listen to provider changes?",
+      "type": "multiple_choice",
+      "options": [
+        "ref.read()",
+        "ref.watch()",
+        "ref.listen()",
+        "ref.refresh()"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "ref.watch() subscribes the widget to updates and rebuilds it when the state changes.",
+      "questionOrder": 1
+    },
+    {
+      "id": "q_01_2",
+      "quizId": "quiz_01",
+      "questionText": "What is the primary benefit of Clean Architecture in Flutter apps?",
+      "type": "multiple_choice",
+      "options": [
+        "Makes the code compile faster",
+        "Decouples UI and business logic so backends can be swapped easily",
+        "Eliminates the need for any state management package",
+        "Automatically generates database schemas"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Clean Architecture strictly separates UI from data sources, allowing seamless backend swaps.",
+      "questionOrder": 2
+    },
+    {
+      "id": "q_01_3",
+      "quizId": "quiz_01",
+      "questionText": "Which Riverpod provider type is recommended for managing asynchronous states?",
+      "type": "multiple_choice",
+      "options": [
+        "StateProvider",
+        "ChangeNotifierProvider",
+        "AsyncNotifierProvider",
+        "SimpleProvider"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "AsyncNotifierProvider handles AsyncValue (loading, data, error) cleanly and safely.",
+      "questionOrder": 3
+    },
+    {
+      "id": "q_01_4",
+      "quizId": "quiz_01",
+      "questionText": "Where should API calls and Dio requests be executed?",
+      "type": "multiple_choice",
+      "options": [
+        "Directly inside the build method of widgets",
+        "Inside remote DataSources",
+        "In main.dart",
+        "Inside the router guards"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "DataSources are strictly responsible for network and database interactions.",
+      "questionOrder": 4
+    },
+    {
+      "id": "q_01_5",
+      "quizId": "quiz_01",
+      "questionText": "What does the autoDispose modifier do in Riverpod?",
+      "type": "multiple_choice",
+      "options": [
+        "Deletes the Flutter project cache",
+        "Automatically cancels state and releases memory when no longer listened to",
+        "Permanently saves state to local storage",
+        "Restarts the app when an error occurs"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "autoDispose frees up resources as soon as the widget listening to the provider unmounts.",
+      "questionOrder": 5
+    },
+    {
+      "id": "q_02_1",
+      "quizId": "quiz_02",
+      "questionText": "Which CSS property defines alignment along the main axis in Flexbox?",
+      "type": "multiple_choice",
+      "options": [
+        "align-items",
+        "justify-content",
+        "align-content",
+        "text-align"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "justify-content aligns items along the primary flex axis.",
+      "questionOrder": 1
+    },
+    {
+      "id": "q_02_2",
+      "quizId": "quiz_02",
+      "questionText": "What is the default flex-direction of a flex container?",
+      "type": "multiple_choice",
+      "options": [
+        "column",
+        "row",
+        "row-reverse",
+        "column-reverse"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "By default, flex-direction is row.",
+      "questionOrder": 2
+    },
+    {
+      "id": "q_02_3",
+      "quizId": "quiz_02",
+      "questionText": "In CSS Grid, what unit represents a fraction of the available space?",
+      "type": "multiple_choice",
+      "options": [
+        "px",
+        "fr",
+        "rem",
+        "%"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The fr unit represents a fraction of free grid container space.",
+      "questionOrder": 3
+    },
+    {
+      "id": "q_02_4",
+      "quizId": "quiz_02",
+      "questionText": "Which property creates space between grid tracks or flex items?",
+      "type": "multiple_choice",
+      "options": [
+        "margin",
+        "gap",
+        "padding",
+        "border-spacing"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "gap defines the gutter between grid rows/columns or flex items.",
+      "questionOrder": 4
+    },
+    {
+      "id": "q_02_5",
+      "quizId": "quiz_02",
+      "questionText": "What media query feature is used for mobile-first responsive breakpoints?",
+      "type": "multiple_choice",
+      "options": [
+        "max-width",
+        "min-width",
+        "orientation",
+        "aspect-ratio"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Mobile-first design utilizes min-width queries to progressively enhance larger screens.",
+      "questionOrder": 5
+    },
+    {
+      "id": "q_03_1",
+      "quizId": "quiz_03",
+      "questionText": "Which join returns only matching records from both tables?",
+      "type": "multiple_choice",
+      "options": [
+        "LEFT JOIN",
+        "FULL OUTER JOIN",
+        "INNER JOIN",
+        "CROSS JOIN"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "INNER JOIN selects rows having matching values in both tables.",
+      "questionOrder": 1
+    },
+    {
+      "id": "q_03_2",
+      "quizId": "quiz_03",
+      "questionText": "Which clause filters records after grouping with GROUP BY?",
+      "type": "multiple_choice",
+      "options": [
+        "WHERE",
+        "HAVING",
+        "ORDER BY",
+        "LIMIT"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "HAVING filters aggregate results produced by GROUP BY.",
+      "questionOrder": 2
+    },
+    {
+      "id": "q_03_3",
+      "quizId": "quiz_03",
+      "questionText": "What does ACID stand for in database transaction theory?",
+      "type": "multiple_choice",
+      "options": [
+        "Atomicity, Consistency, Isolation, Durability",
+        "Accuracy, Control, Indexing, Data",
+        "Asynchronous, Concurrency, Integrity, Distribution",
+        "Action, Commit, Integrity, Deletion"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "ACID guarantees database reliability: Atomicity, Consistency, Isolation, Durability.",
+      "questionOrder": 3
+    },
+    {
+      "id": "q_03_4",
+      "quizId": "quiz_03",
+      "questionText": "What type of index is most commonly used in PostgreSQL for equality and range queries?",
+      "type": "multiple_choice",
+      "options": [
+        "Hash",
+        "B-Tree",
+        "GiST",
+        "GIN"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "B-Tree is the default and most versatile index type in relational databases.",
+      "questionOrder": 4
+    },
+    {
+      "id": "q_03_5",
+      "quizId": "quiz_03",
+      "questionText": "Which normal form eliminates transitive functional dependencies?",
+      "type": "multiple_choice",
+      "options": [
+        "1NF",
+        "2NF",
+        "3NF",
+        "4NF"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Third Normal Form (3NF) requires 2NF and that no non-prime attribute transitively depends on the primary key.",
+      "questionOrder": 5
+    },
+    {
+      "id": "q_04_1",
+      "quizId": "quiz_04",
+      "questionText": "Why are NumPy operations significantly faster than standard Python lists?",
+      "type": "multiple_choice",
+      "options": [
+        "They run in the cloud",
+        "They are implemented in C with contiguous memory storage",
+        "They avoid using memory entirely",
+        "They only work with text strings"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "NumPy stores elements contiguously and executes vectorized operations in compiled C.",
+      "questionOrder": 1
+    },
+    {
+      "id": "q_04_2",
+      "quizId": "quiz_04",
+      "questionText": "What function creates an identity matrix in NumPy?",
+      "type": "multiple_choice",
+      "options": [
+        "np.zeros()",
+        "np.eye()",
+        "np.ones()",
+        "np.diag()"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "np.eye(N) returns an N x N 2-D array with ones on the diagonal and zeros elsewhere.",
+      "questionOrder": 2
+    },
+    {
+      "id": "q_04_3",
+      "quizId": "quiz_04",
+      "questionText": "What is array broadcasting in NumPy?",
+      "type": "multiple_choice",
+      "options": [
+        "Sending array data over a network socket",
+        "Operating on arrays of different shapes under compatible dimensions",
+        "Printing the array to stdout",
+        "Converting arrays to Pandas dataframes"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Broadcasting describes how NumPy treats arrays with different shapes during arithmetic operations.",
+      "questionOrder": 3
+    },
+    {
+      "id": "q_04_4",
+      "quizId": "quiz_04",
+      "questionText": "Which method returns the dimensions of an ndarray?",
+      "type": "multiple_choice",
+      "options": [
+        ".size",
+        ".shape",
+        ".ndim",
+        ".length"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": ".shape returns a tuple of integers indicating the size of the array along each axis.",
+      "questionOrder": 4
+    },
+    {
+      "id": "q_04_5",
+      "quizId": "quiz_04",
+      "questionText": "What Pandas method drops rows with null values?",
+      "type": "multiple_choice",
+      "options": [
+        "df.fillna()",
+        "df.dropna()",
+        "df.isnull()",
+        "df.clean()"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "df.dropna() removes rows containing missing or NaN values.",
+      "questionOrder": 5
+    },
+    {
+      "id": "q_05_1",
+      "quizId": "quiz_05",
+      "questionText": "What algorithm is used to compute gradients in neural networks via the chain rule?",
+      "type": "multiple_choice",
+      "options": [
+        "Gradient Descent",
+        "Backpropagation",
+        "QuickSort",
+        "A* Search"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Backpropagation computes the gradient of the loss function with respect to weights using the chain rule.",
+      "questionOrder": 1
+    },
+    {
+      "id": "q_05_2",
+      "quizId": "quiz_05",
+      "questionText": "Which activation function maps values to a probability distribution between 0 and 1 summing to 1?",
+      "type": "multiple_choice",
+      "options": [
+        "ReLU",
+        "Sigmoid",
+        "Softmax",
+        "Tanh"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Softmax turns raw logits into a normalized probability distribution over multiple classes.",
+      "questionOrder": 2
+    },
+    {
+      "id": "q_05_3",
+      "quizId": "quiz_05",
+      "questionText": "What is the purpose of a validation dataset in machine learning?",
+      "type": "multiple_choice",
+      "options": [
+        "To train the final weights of the model",
+        "To tune hyperparameters and detect overfitting before testing",
+        "To store backups of the model",
+        "To increase model complexity"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The validation set provides an unbiased evaluation while tuning model hyperparameters.",
+      "questionOrder": 3
+    },
+    {
+      "id": "q_05_4",
+      "quizId": "quiz_05",
+      "questionText": "What issue occurs when gradients become exponentially small in deep networks?",
+      "type": "multiple_choice",
+      "options": [
+        "Exploding gradient",
+        "Vanishing gradient",
+        "Overfitting",
+        "Underfitting"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Vanishing gradients prevent early layers from learning effectively in deep architectures.",
+      "questionOrder": 4
+    },
+    {
+      "id": "q_05_5",
+      "quizId": "quiz_05",
+      "questionText": "What does CNN stand for in deep learning?",
+      "type": "multiple_choice",
+      "options": [
+        "Centralized Neural Network",
+        "Convolutional Neural Network",
+        "Continuous Node Network",
+        "Computed Natural Network"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "CNN stands for Convolutional Neural Network, typically used for spatial and visual recognition.",
+      "questionOrder": 5
+    },
+    {
+      "id": "q_06_1",
+      "quizId": "quiz_06",
+      "questionText": "How do Java Virtual Threads differ from traditional platform threads?",
+      "type": "multiple_choice",
+      "options": [
+        "They run on GPU only",
+        "They are lightweight user-mode threads managed by the JVM rather than OS threads",
+        "They do not allow network calls",
+        "They are limited to 10 threads max"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Virtual threads are lightweight JVM-managed threads, allowing millions of concurrent tasks with minimal overhead.",
+      "questionOrder": 1
+    },
+    {
+      "id": "q_06_2",
+      "quizId": "quiz_06",
+      "questionText": "Which keyword creates an immutable data carrier class in Java 16+?",
+      "type": "multiple_choice",
+      "options": [
+        "struct",
+        "record",
+        "data class",
+        "val"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "record classes in Java are transparent holders for immutable data.",
+      "questionOrder": 2
+    },
+    {
+      "id": "q_06_3",
+      "quizId": "quiz_06",
+      "questionText": "Which collection does NOT preserve the insertion order of elements?",
+      "type": "multiple_choice",
+      "options": [
+        "ArrayList",
+        "HashSet",
+        "LinkedHashSet",
+        "LinkedList"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "HashSet does not make any guarantees as to the iteration order of the elements.",
+      "questionOrder": 3
+    },
+    {
+      "id": "q_06_4",
+      "quizId": "quiz_06",
+      "questionText": "What is the purpose of the Optional<T> class in Java?",
+      "type": "multiple_choice",
+      "options": [
+        "To improve loop performance",
+        "To explicitly represent the presence or absence of a value, avoiding NullPointerExceptions",
+        "To format strings",
+        "To run asynchronous tasks"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Optional provides a clear API to handle nullable returns safely.",
+      "questionOrder": 4
+    },
+    {
+      "id": "q_06_5",
+      "quizId": "quiz_06",
+      "questionText": "Which functional interface in java.util.function takes one argument and returns a boolean?",
+      "type": "multiple_choice",
+      "options": [
+        "Consumer<T>",
+        "Function<T, R>",
+        "Predicate<T>",
+        "Supplier<T>"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Predicate<T> represents a predicate (boolean-valued function) of one argument.",
+      "questionOrder": 5
+    },
+    {
+      "id": "q_07_1",
+      "quizId": "quiz_07",
+      "questionText": "What is the correct sequence of the standard TCP three-way handshake?",
+      "type": "multiple_choice",
+      "options": [
+        "SYN, ACK, FIN",
+        "SYN, SYN-ACK, ACK",
+        "ACK, SYN, DATA",
+        "HELLO, READY, GO"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "TCP establishes connections using SYN -> SYN-ACK -> ACK.",
+      "questionOrder": 1
+    },
+    {
+      "id": "q_07_2",
+      "quizId": "quiz_07",
+      "questionText": "On which OSI layer does IP (Internet Protocol) operate?",
+      "type": "multiple_choice",
+      "options": [
+        "Layer 2 (Data Link)",
+        "Layer 3 (Network)",
+        "Layer 4 (Transport)",
+        "Layer 7 (Application)"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "IP is a Layer 3 Network layer protocol responsible for routing.",
+      "questionOrder": 2
+    },
+    {
+      "id": "q_07_3",
+      "quizId": "quiz_07",
+      "questionText": "Which protocol is connectionless and does NOT guarantee packet delivery or order?",
+      "type": "multiple_choice",
+      "options": [
+        "TCP",
+        "UDP",
+        "BGP",
+        "SSH"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "UDP provides fast, unreliable, connectionless datagram delivery.",
+      "questionOrder": 3
+    },
+    {
+      "id": "q_07_4",
+      "quizId": "quiz_07",
+      "questionText": "What standard port does HTTPS utilize by default?",
+      "type": "multiple_choice",
+      "options": [
+        "80",
+        "8080",
+        "443",
+        "22"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Port 443 is the standard port for TLS/HTTPS encrypted web traffic.",
+      "questionOrder": 4
+    },
+    {
+      "id": "q_07_5",
+      "quizId": "quiz_07",
+      "questionText": "What type of attack floods a target with traffic to exhaust its resources?",
+      "type": "multiple_choice",
+      "options": [
+        "Phishing",
+        "DDoS",
+        "Man-in-the-Middle",
+        "SQL Injection"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Distributed Denial of Service (DDoS) overwhelms bandwidth or computational capacity.",
+      "questionOrder": 5
+    },
+    {
+      "id": "q_08_1",
+      "quizId": "quiz_08",
+      "questionText": "In a stateless REST API with JWT, what should the SessionCreationPolicy be set to in Spring Security?",
+      "type": "multiple_choice",
+      "options": [
+        "ALWAYS",
+        "IF_REQUIRED",
+        "NEVER",
+        "STATELESS"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "SessionCreationPolicy.STATELESS ensures Spring does not maintain an HTTP session.",
+      "questionOrder": 1
+    },
+    {
+      "id": "q_08_2",
+      "quizId": "quiz_08",
+      "questionText": "What standard HTTP header is used to pass the Bearer JWT token in requests?",
+      "type": "multiple_choice",
+      "options": [
+        "Cookie",
+        "Authorization",
+        "X-Auth-Token",
+        "Authentication"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The Authorization header formatted as \"Bearer <token>\" is the standard.",
+      "questionOrder": 2
+    },
+    {
+      "id": "q_08_3",
+      "quizId": "quiz_08",
+      "questionText": "What are the three components of a JSON Web Token separated by periods?",
+      "type": "multiple_choice",
+      "options": [
+        "Header, Payload, Signature",
+        "Username, Password, Salt",
+        "Key, Value, Checksum",
+        "Algorithm, Body, Hash"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "A JWT consists of Header (algorithm), Payload (claims), and Signature (cryptographic verification).",
+      "questionOrder": 3
+    },
+    {
+      "id": "q_08_4",
+      "quizId": "quiz_08",
+      "questionText": "Which Spring annotation marks a class as providing bean definitions for application context?",
+      "type": "multiple_choice",
+      "options": [
+        "@Service",
+        "@Repository",
+        "@Configuration",
+        "@Controller"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "@Configuration indicates that a class declares one or more @Bean methods.",
+      "questionOrder": 4
+    },
+    {
+      "id": "q_08_5",
+      "quizId": "quiz_08",
+      "questionText": "Which Spring Data interface provides built-in pagination and sorting out of the box?",
+      "type": "multiple_choice",
+      "options": [
+        "CrudRepository",
+        "JpaRepository",
+        "SimpleRepository",
+        "QueryRepository"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "JpaRepository extends PagingAndSortingRepository, providing full CRUD with pagination.",
+      "questionOrder": 5
+    },
+    {
+      "id": "q_09_1",
+      "quizId": "quiz_09",
+      "questionText": "Why should package manager install commands and cache cleanups be chained in a single RUN instruction?",
+      "type": "multiple_choice",
+      "options": [
+        "Because Docker only supports one RUN command",
+        "To prevent leftover cache files from being committed into intermediate image layers",
+        "To speed up CPU processing during execution",
+        "To automatically encrypt the container"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Each RUN creates an immutable layer; cleaning caches in the same command minimizes final image size.",
+      "questionOrder": 1
+    },
+    {
+      "id": "q_09_2",
+      "quizId": "quiz_09",
+      "questionText": "What is the purpose of multi-stage Docker builds?",
+      "type": "multiple_choice",
+      "options": [
+        "To run multiple containers simultaneously",
+        "To separate the build environment from the lean runtime image",
+        "To publish images to multiple registries",
+        "To bypass Docker daemon permissions"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Multi-stage builds allow compiling in heavy build environments and copying only artifacts to minimal images.",
+      "questionOrder": 2
+    },
+    {
+      "id": "q_09_3",
+      "quizId": "quiz_09",
+      "questionText": "Which Docker directive defines the default executable to run when the container starts?",
+      "type": "multiple_choice",
+      "options": [
+        "RUN",
+        "ENTRYPOINT",
+        "EXPOSE",
+        "WORKDIR"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "ENTRYPOINT specifies the command that will always be executed when the container starts.",
+      "questionOrder": 3
+    },
+    {
+      "id": "q_09_4",
+      "quizId": "quiz_09",
+      "questionText": "What is used in Docker to persist data independently of the container lifecycle?",
+      "type": "multiple_choice",
+      "options": [
+        "Environment variables",
+        "Docker Volumes",
+        "Image layers",
+        "Port mappings"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Volumes are stored on the host filesystem and persist beyond container deletion.",
+      "questionOrder": 4
+    },
+    {
+      "id": "q_09_5",
+      "quizId": "quiz_09",
+      "questionText": "What file excludes files and directories from the Docker build context?",
+      "type": "multiple_choice",
+      "options": [
+        ".gitignore",
+        ".dockerignore",
+        "Dockerfile.ignore",
+        "docker.conf"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": ".dockerignore prevents unnecessary files from being sent to the Docker daemon.",
+      "questionOrder": 5
+    },
+    {
+      "id": "q_10_1",
+      "quizId": "quiz_10",
+      "questionText": "What is the average time complexity of searching an element in a balanced Binary Search Tree?",
+      "type": "multiple_choice",
+      "options": [
+        "O(1)",
+        "O(log N)",
+        "O(N)",
+        "O(N log N)"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Each step cuts the remaining search space in half, resulting in logarithmic O(log N) time.",
+      "questionOrder": 1
+    },
+    {
+      "id": "q_10_2",
+      "quizId": "quiz_10",
+      "questionText": "What is the worst-case search complexity in an unbalanced degenerate BST (linked list shape)?",
+      "type": "multiple_choice",
+      "options": [
+        "O(1)",
+        "O(log N)",
+        "O(N)",
+        "O(N^2)"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "When a BST degenerates into a linear chain, searching takes O(N) linear time.",
+      "questionOrder": 2
+    },
+    {
+      "id": "q_10_3",
+      "quizId": "quiz_10",
+      "questionText": "Which tree traversal yields elements in sorted non-decreasing order for a BST?",
+      "type": "multiple_choice",
+      "options": [
+        "Preorder",
+        "Inorder",
+        "Postorder",
+        "Level-order"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Inorder traversal visits Left -> Root -> Right, which visits nodes in ascending order.",
+      "questionOrder": 3
+    },
+    {
+      "id": "q_10_4",
+      "quizId": "quiz_10",
+      "questionText": "What data structure is typically used to implement Breadth-First Search (BFS)?",
+      "type": "multiple_choice",
+      "options": [
+        "Stack",
+        "Queue",
+        "Priority Queue",
+        "HashTable"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "BFS uses a FIFO Queue to visit all nodes level by level.",
+      "questionOrder": 4
+    },
+    {
+      "id": "q_10_5",
+      "quizId": "quiz_10",
+      "questionText": "What is the time complexity of QuickSort in the average case?",
+      "type": "multiple_choice",
+      "options": [
+        "O(N)",
+        "O(N log N)",
+        "O(N^2)",
+        "O(2^N)"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "QuickSort runs in O(N log N) average time with efficient in-place partitioning.",
+      "questionOrder": 5
+    }
+  ],
+  "quizAttempts": [
+    {
+      "id": "att_01",
+      "quizId": "quiz_01",
+      "studentId": "usr_student_01",
+      "score": 50,
+      "percentage": 100,
+      "correctAnswers": 5,
+      "incorrectAnswers": 0,
+      "passed": 1,
+      "attemptDate": "2026-09-30T11:39:49.149Z",
+      "selectedAnswers": {
+        "0": 1,
+        "1": 1,
+        "2": 2,
+        "3": 1,
+        "4": 1
+      }
+    }
+  ],
+  "assignments": [
+    {
+      "id": "asg_01",
+      "courseId": "crs_01",
+      "lessonId": "les_01_03",
+      "title": "Build Clean Architecture Course Repository in Flutter",
+      "description": "Construct a decoupled repository layer with abstract contracts, remote data source, and entity mappers.",
+      "instruction": "1. Define CourseRepository contract with getCourses() and getCourseById().\n2. Implement CourseRepositoryImpl with DataSource dependency.\n3. Write unit tests for your repository using Mockito or FakeDataSource.",
+      "dueDate": "2026-10-07T11:39:49.147Z",
+      "supportingFile": "https://example.com/starter/clean_architecture_spec.pdf",
+      "maximumScore": 100
+    },
+    {
+      "id": "asg_02",
+      "courseId": "crs_02",
+      "lessonId": "les_02_04",
+      "title": "RESTful API with Node.js & Express",
+      "description": "Develop a CRUD REST API for a task management application with JSON persistence.",
+      "instruction": "1. Implement GET, POST, PUT, and DELETE routes on /api/tasks.\n2. Handle invalid inputs with HTTP 400 Bad Request.\n3. Include a Postman collection export.",
+      "dueDate": "2026-10-06T11:39:49.148Z",
+      "supportingFile": "https://example.com/starter/express_api_guideline.pdf",
+      "maximumScore": 100
+    },
+    {
+      "id": "asg_03",
+      "courseId": "crs_03",
+      "lessonId": "les_03_03",
+      "title": "Database Schema Design & Query Optimization",
+      "description": "Normalize an unnormalized e-commerce dataset into 3NF and write index-optimized queries.",
+      "instruction": "1. Produce an ER Diagram in PNG or PDF.\n2. Write SQL DDL with foreign keys and cascade rules.\n3. Benchmark 3 complex JOIN queries with EXPLAIN ANALYZE.",
+      "dueDate": "2026-10-08T11:39:49.148Z",
+      "supportingFile": "https://example.com/starter/schema_spec.sql",
+      "maximumScore": 100
+    },
+    {
+      "id": "asg_04",
+      "courseId": "crs_04",
+      "lessonId": "les_04_03",
+      "title": "Customer Churn Analysis with Pandas",
+      "description": "Clean raw telecom datasets, handle missing values, and extract key churn indicators.",
+      "instruction": "1. Submit a completed Jupyter Notebook (.ipynb).\n2. Plot correlation heatmaps and customer lifetime distribution.",
+      "dueDate": "2026-10-09T11:39:49.148Z",
+      "supportingFile": "https://example.com/starter/churn_data.csv",
+      "maximumScore": 100
+    },
+    {
+      "id": "asg_05",
+      "courseId": "crs_05",
+      "lessonId": "les_05_02",
+      "title": "Image Classifier using PyTorch / CNN",
+      "description": "Train a convolutional neural network on CIFAR-10 reaching at least 75% accuracy.",
+      "instruction": "1. Submit training script with model architecture, optimizer, and loss curve graph.\n2. Save model checkpoint.",
+      "dueDate": "2026-10-12T11:39:49.148Z",
+      "supportingFile": "https://example.com/starter/cnn_starter.py",
+      "maximumScore": 100
+    },
+    {
+      "id": "asg_06",
+      "courseId": "crs_06",
+      "lessonId": "les_06_02",
+      "title": "Interactive Design System Prototype in Figma",
+      "description": "Create a scalable design system for a mobile e-learning app with auto-layout components.",
+      "instruction": "1. Include typography, color styles, buttons, inputs, and card components.\n2. Provide public Figma preview URL.",
+      "dueDate": "2026-10-05T11:39:49.148Z",
+      "supportingFile": "https://example.com/starter/figma_guidelines.pdf",
+      "maximumScore": 100
+    },
+    {
+      "id": "asg_07",
+      "courseId": "crs_07",
+      "lessonId": "les_07_02",
+      "title": "OOP Banking System in Java with Concurrency",
+      "description": "Design a thread-safe multi-account transfer engine using Java ReentrantLock or Atomic types.",
+      "instruction": "1. Implement deadlock prevention.\n2. Write unit tests with 100 concurrent worker threads.\n3. Package as Maven/Gradle project.",
+      "dueDate": "2026-10-10T11:39:49.148Z",
+      "supportingFile": "https://example.com/starter/banking_spec.pdf",
+      "maximumScore": 100
+    },
+    {
+      "id": "asg_08",
+      "courseId": "crs_09",
+      "lessonId": "les_09_02",
+      "title": "Network Vulnerability Audit & Report",
+      "description": "Conduct a simulated port scan and TLS certificate evaluation on a target lab machine.",
+      "instruction": "1. Identify exposed ports and outdated services.\n2. Document CVSS severity scores and mitigation instructions.",
+      "dueDate": "2026-10-11T11:39:49.148Z",
+      "supportingFile": "https://example.com/starter/audit_template.docx",
+      "maximumScore": 100
+    },
+    {
+      "id": "asg_09",
+      "courseId": "crs_11",
+      "lessonId": "les_11_02",
+      "title": "Spring Security 6 JWT Auth Microservice",
+      "description": "Build an authentication microservice with refresh token rotation and BCrypt hashing.",
+      "instruction": "1. Implement /api/v1/auth/register, /login, and /refresh.\n2. Enforce role-based access control on /api/v1/admin endpoints.",
+      "dueDate": "2026-10-14T11:39:49.148Z",
+      "supportingFile": "https://example.com/starter/spring_auth_spec.pdf",
+      "maximumScore": 100
+    },
+    {
+      "id": "asg_10",
+      "courseId": "crs_15",
+      "lessonId": "les_15_01",
+      "title": "Production Multi-Stage Dockerfile",
+      "description": "Containerize a full-stack web application with minimal image size and non-root user execution.",
+      "instruction": "1. Write Dockerfile with build stage and runtime stage.\n2. Provide docker-compose.yml including database healthcheck.",
+      "dueDate": "2026-10-08T11:39:49.148Z",
+      "supportingFile": "https://example.com/starter/docker_spec.pdf",
+      "maximumScore": 100
+    }
+  ],
+  "submissions": [
+    {
+      "id": "sub_01",
+      "assignmentId": "asg_01",
+      "studentId": "usr_student_01",
+      "submissionDate": "2026-10-01T11:39:49.149Z",
+      "textSubmission": "Implemented CourseRepositoryImpl with DataSource abstraction and mock test suite. Code pushed to GitHub repository.",
+      "submissionFile": "https://example.com/submissions/clean_arch_submission.zip",
+      "comment": "Please check the unit test coverage under test/data/repositories.",
+      "status": "graded",
+      "score": 95,
+      "grade": "A",
+      "feedback": "Excellent adherence to Clean Architecture and SOLID principles. Clear separation between domain and data.",
+      "reviewedDate": "2026-10-02T11:39:49.149Z"
+    }
+  ],
+  "enrollments": [
+    {
+      "id": "enr_01",
+      "studentId": "usr_student_01",
+      "courseId": "crs_01",
+      "enrollmentDate": "2026-09-18T11:39:49.149Z",
+      "status": "active",
+      "progress": 45
+    },
+    {
+      "id": "enr_02",
+      "studentId": "usr_student_01",
+      "courseId": "crs_04",
+      "enrollmentDate": "2026-09-02T11:39:49.149Z",
+      "status": "completed",
+      "progress": 100
+    },
+    {
+      "id": "enr_03",
+      "studentId": "usr_student_01",
+      "courseId": "crs_10",
+      "enrollmentDate": "2026-09-25T11:39:49.149Z",
+      "status": "active",
+      "progress": 20
+    }
+  ],
+  "progress": [
+    {
+      "id": "prog_crs_01_student",
+      "courseId": "crs_01",
+      "studentId": "usr_student_01",
+      "completedLessons": 2,
+      "totalLessons": 6,
+      "completedQuizzes": 1,
+      "totalQuizzes": 1,
+      "submittedAssignments": 1,
+      "totalAssignments": 1,
+      "percentage": 60,
+      "lastActivity": "2026-10-02T08:39:49.149Z"
+    },
+    {
+      "id": "prog_crs_04_student",
+      "courseId": "crs_04",
+      "studentId": "usr_student_01",
+      "completedLessons": 4,
+      "totalLessons": 4,
+      "completedQuizzes": 1,
+      "totalQuizzes": 1,
+      "submittedAssignments": 1,
+      "totalAssignments": 1,
+      "percentage": 100,
+      "lastActivity": "2026-09-30T11:39:49.149Z"
+    },
+    {
+      "id": "prog_crs_10_student",
+      "courseId": "crs_10",
+      "studentId": "usr_student_01",
+      "completedLessons": 0,
+      "totalLessons": 2,
+      "completedQuizzes": 0,
+      "totalQuizzes": 0,
+      "submittedAssignments": 0,
+      "totalAssignments": 0,
+      "percentage": 0,
+      "lastActivity": "2026-09-27T11:39:49.149Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "notif_01",
+      "userId": "usr_student_01",
+      "title": "Assignment Graded! 🎉",
+      "message": "Your submission for \"Build Clean Architecture Course Repository\" received a score of 95/100 (Grade A).",
+      "type": "assignmentGraded",
+      "isRead": 0,
+      "createdAt": "2026-10-02T09:39:49.149Z"
+    },
+    {
+      "id": "notif_02",
+      "userId": "usr_student_01",
+      "title": "Certificate Earned! 📜",
+      "message": "Congratulations! You have earned your certificate for \"Python for Data Science & Machine Learning Foundations\".",
+      "type": "certificateEarned",
+      "isRead": 0,
+      "createdAt": "2026-09-30T11:39:49.149Z"
+    },
+    {
+      "id": "notif_03",
+      "userId": "usr_student_01",
+      "title": "New Lesson Available",
+      "message": "Lesson 6: Connecting to Spring Boot Backend has been added to Flutter Mobile Development.",
+      "type": "courseUpdate",
+      "isRead": 1,
+      "createdAt": "2026-09-28T11:39:49.149Z"
+    }
+  ],
+  "certificates": [
+    {
+      "id": "cert_01",
+      "studentId": "usr_student_01",
+      "studentName": "Dara Somnang",
+      "courseId": "crs_04",
+      "courseTitle": "Python for Data Science & Machine Learning Foundations",
+      "issueDate": "2026-09-30T11:39:49.150Z",
+      "certificateCode": "CERT-DS-2026-88192",
+      "credentialUrl": "https://edulearn.com/verify/CERT-DS-2026-88192",
+      "instructorName": "Elena Rostova"
+    }
+  ],
+  "activities": [
+    {
+      "id": "act_01",
+      "userId": "usr_student_01",
+      "courseId": "crs_01",
+      "courseTitle": "Flutter Mobile Development: Clean Architecture & Riverpod",
+      "type": "assignmentSubmitted",
+      "title": "Submitted Assignment: Build Clean Architecture Course Repository",
+      "timestamp": "2026-10-01T11:39:49.150Z",
+      "scoreOrDetail": "Grade: A (95%)"
+    },
+    {
+      "id": "act_02",
+      "userId": "usr_student_01",
+      "courseId": "crs_01",
+      "courseTitle": "Flutter Mobile Development: Clean Architecture & Riverpod",
+      "type": "quizAttempted",
+      "title": "Completed Quiz: Riverpod 2.0 & Clean State Management",
+      "timestamp": "2026-09-30T11:39:49.150Z",
+      "scoreOrDetail": "Score: 100%"
+    },
+    {
+      "id": "act_03",
+      "userId": "usr_student_01",
+      "courseId": "crs_01",
+      "courseTitle": "Flutter Mobile Development: Clean Architecture & Riverpod",
+      "type": "lessonCompleted",
+      "title": "Completed Lesson: State Management with Riverpod 2.0",
+      "timestamp": "2026-09-29T11:39:49.150Z"
+    },
+    {
+      "id": "act_04",
+      "userId": "usr_student_01",
+      "courseId": "crs_04",
+      "courseTitle": "Python for Data Science & Machine Learning Foundations",
+      "type": "courseEnrolled",
+      "title": "Completed Course & Received Certificate",
+      "timestamp": "2026-09-30T11:39:49.150Z",
+      "scoreOrDetail": "Certificate ID: CERT-DS-2026-88192"
+    }
+  ],
+  "favorites": [
+    {
+      "id": "fav_crs_01_student",
+      "userId": "usr_student_01",
+      "courseId": "crs_01"
+    },
+    {
+      "id": "fav_crs_04_student",
+      "userId": "usr_student_01",
+      "courseId": "crs_04"
+    },
+    {
+      "id": "fav_crs_10_student",
+      "userId": "usr_student_01",
+      "courseId": "crs_10"
+    }
+  ]
+}
